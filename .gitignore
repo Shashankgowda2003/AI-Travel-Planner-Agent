@@ -1,0 +1,6 @@
+**/__pycache__/
+/__pypackages__/
+/chroma_db/
+/venv/
+.env
+*.sqlite3

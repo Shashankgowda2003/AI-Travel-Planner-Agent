@@ -1,0 +1,22 @@
+[
+  {
+    "id": "goa_overview",
+    "title": "Goa Overview",
+    "content": "Goa is a coastal state in India known for its beaches, seafood, nightlife, Portuguese heritage and historic churches. Main tourist areas: North Goa (Baga, Calangute, Anjuna), South Goa (Colva, Palolem). Popular activities: beach time, water sports, sightseeing at Fort Aguada, Basilica of Bom Jesus, and night markets."
+  },
+  {
+    "id": "north_goa_day",
+    "title": "North Goa - Day plan",
+    "content": "Morning: Fort Aguada and Sinquerim. Afternoon: Calangute and Baga beaches, water sports. Evening: Saturday Night Market at Arpora (if open), beach shacks for dinner."
+  },
+  {
+    "id": "south_goa_day",
+    "title": "South Goa - Day plan",
+    "content": "Morning: Relax at Palolem/Colva beach. Afternoon: Dolphin-spotting boat trip. Evening: Quiet beach dinner and strolling."
+  },
+  {
+    "id": "heritage_spots",
+    "title": "Heritage spots",
+    "content": "Basilica of Bom Jesus (Old Goa), Se Cathedral, churches and Portuguese-style houses in Fontainhas, Panjim."
+  }
+]
