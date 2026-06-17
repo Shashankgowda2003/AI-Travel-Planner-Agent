@@ -7,11 +7,8 @@ from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.schema import Document
-from langchain.agents import Tool, initialize_agent
-from langchain.agents import AgentType
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-from langchain.memory import ConversationBufferMemory
 
 # local tools
 from tools.booking_tool import booking_search_links
@@ -46,18 +43,6 @@ def create_or_load_chroma():
 
 # initialize LLM
 llm = ChatOpenAI(model="gpt-4", temperature=0.2, openai_api_key=OPENAI_API_KEY)
-
-booking_tool = Tool.from_function(
-    func=booking_search_links,
-    name="booking",
-    description="Return booking search links for a destination."
-)
-
-maps_tool = Tool.from_function(
-    func=google_maps_search_url,
-    name="maps",
-    description="Return a Google Maps search URL for a place or query."
-)
 
 def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: str | None = None) -> Dict[str, Any]:
     """
