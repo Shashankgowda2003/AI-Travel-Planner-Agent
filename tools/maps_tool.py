@@ -1,8 +1,7 @@
 # tools/maps_tool.py
-import os
 from urllib.parse import urlencode
 
-def google_maps_search_url(query: str, api_key: str | None = None):
+def google_maps_search_url(query: str):
     """
     Build a Google Maps search URL (works without API key for user clicking).
     If API key is present, it can be used for embed URLs in the Streamlit iframe.

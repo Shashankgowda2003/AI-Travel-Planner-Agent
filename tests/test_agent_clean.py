@@ -8,7 +8,6 @@ AGENT_PATH = Path(__file__).resolve().parent.parent / "agent.py"
 DEAD_IMPORTS = [
     "initialize_agent",
     "AgentType",
-    "ConversationBufferMemory",
 ]
 
 DEAD_TOOLS = [
@@ -23,6 +22,7 @@ USEFUL_IMPORTS = [
     "Document",
     "PromptTemplate",
     "LLMChain",
+    "ConversationBufferMemory",
 ]
 
 
@@ -76,3 +76,29 @@ class TestAgentNoDeadCode:
         assert name in imported_names, (
             f"Useful import '{name}' is missing from agent.py"
         )
+
+    def test_optional_str_imported(self):
+        source = AGENT_PATH.read_text(encoding="utf-8")
+        assert "from typing import" in source
+        assert "Optional" in source
+
+    def test_no_persist_call(self):
+        source = AGENT_PATH.read_text(encoding="utf-8")
+        assert ".persist()" not in source
+
+    def test_api_key_validation_present(self):
+        source = AGENT_PATH.read_text(encoding="utf-8")
+        assert "if not OPENAI_API_KEY:" in source
+
+    def test_response_format_json_object(self):
+        source = AGENT_PATH.read_text(encoding="utf-8")
+        assert '"response_format"' in source
+        assert '"json_object"' in source
+
+    def test_structured_logging_imported(self):
+        source = AGENT_PATH.read_text(encoding="utf-8")
+        assert "import logging" in source
+
+    def test_india_destinations_referenced(self):
+        source = AGENT_PATH.read_text(encoding="utf-8")
+        assert "india_destinations.json" in source

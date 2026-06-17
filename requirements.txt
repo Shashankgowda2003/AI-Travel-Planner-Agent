@@ -1,6 +1,9 @@
 streamlit
 langchain
+langchain-openai
 openai
 chromadb
 python-dotenv
 tiktoken
+pytest
+mypy

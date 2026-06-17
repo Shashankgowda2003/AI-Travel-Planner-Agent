@@ -1,0 +1,72 @@
+[
+  {
+    "id": "goa_overview",
+    "title": "Goa Overview",
+    "content": "Goa is a coastal state in India known for its beaches, seafood, nightlife, Portuguese heritage and historic churches. Main tourist areas: North Goa (Baga, Calangute, Anjuna), South Goa (Colva, Palolem). Popular activities: beach time, water sports, sightseeing at Fort Aguada, Basilica of Bom Jesus, and night markets."
+  },
+  {
+    "id": "north_goa_day",
+    "title": "North Goa - Day plan",
+    "content": "Morning: Fort Aguada and Sinquerim. Afternoon: Calangute and Baga beaches, water sports. Evening: Saturday Night Market at Arpora (if open), beach shacks for dinner."
+  },
+  {
+    "id": "south_goa_day",
+    "title": "South Goa - Day plan",
+    "content": "Morning: Relax at Palolem/Colva beach. Afternoon: Dolphin-spotting boat trip. Evening: Quiet beach dinner and strolling."
+  },
+  {
+    "id": "heritage_spots",
+    "title": "Heritage spots",
+    "content": "Basilica of Bom Jesus (Old Goa), Se Cathedral, churches and Portuguese-style houses in Fontainhas, Panjim."
+  },
+  {
+    "id": "jaipur_overview",
+    "title": "Jaipur Overview",
+    "content": "Jaipur, the Pink City of Rajasthan, is known for its royal palaces, majestic forts, vibrant bazaars, and rich Rajput heritage. Popular attractions: Amer Fort, Hawa Mahal, City Palace, Jantar Mantar. Famous for handicrafts, textiles, gemstones, and Rajasthani cuisine like dal baati churma."
+  },
+  {
+    "id": "jaipur_day_plan",
+    "title": "Jaipur - Day plan",
+    "content": "Morning: Amer Fort with elephant ride. Afternoon: City Palace, Jantar Mantar, Hawa Mahal photo stop. Evening: Shopping at Johari Bazaar, Bapu Bazaar. Dinner at Chokhi Dhani for authentic Rajasthani experience."
+  },
+  {
+    "id": "kerala_overview",
+    "title": "Kerala Overview",
+    "content": "Kerala, God's Own Country, offers serene backwaters, lush tea gardens, pristine beaches, and rich cultural experiences. Must-visit: Alleppey houseboat cruise, Munnar tea plantations, Kovalam beach, Periyar wildlife sanctuary, and Kathakali dance performances. Famous for Ayurvedic spa treatments and seafood."
+  },
+  {
+    "id": "kerala_day_plan",
+    "title": "Kerala - Day plan",
+    "content": "Day 1: Kochi arrival, Fort Kochi, Chinese fishing nets. Day 2: Munnar tea gardens, Echo Point, Mattupetty Dam. Day 3: Alleppey houseboat backwater cruise. Day 4: Kovalam beach, Ayurvedic spa. Evening: Kathakali performance."
+  },
+  {
+    "id": "manali_overview",
+    "title": "Manali Overview",
+    "content": "Manali is a popular hill station in Himachal Pradesh, nestled in the Beas River valley. Known for adventure sports, snow-capped peaks, and pine forests. Top spots: Solang Valley, Rohtang Pass, Hadimba Temple, Old Manali cafes, Vashisht hot springs, and Jogini Falls. Ideal for trekking, paragliding, skiing, and river rafting."
+  },
+  {
+    "id": "manali_day_plan",
+    "title": "Manali - Day plan",
+    "content": "Day 1: Hadimba Temple, Old Manali, Manu Temple, Mall Road. Day 2: Solang Valley for adventure sports (paragliding, zorbing). Day 3: Rohtang Pass snow experience (May-Nov), Vashisht hot springs. Evening: Cafe hopping in Old Manali."
+  },
+  {
+    "id": "ladakh_overview",
+    "title": "Ladakh Overview",
+    "content": "Ladakh is a high-altitude desert region in northern India known for stunning landscapes, Buddhist monasteries, and adventure tourism. Must-visit: Pangong Tso lake, Nubra Valley sand dunes, Khardung La pass (one of world's highest motorable roads). Famous monasteries: Hemis, Thiksey, Diskit. Best visited June-September. Activities: trekking, biking, river rafting."
+  },
+  {
+    "id": "ladakh_day_plan",
+    "title": "Ladakh - Day plan",
+    "content": "Day 1: Leh acclimatization, Shanti Stupa, Leh Palace. Day 2: Khardung La, Nubra Valley, Diskit Monastery, camel safari. Day 3: Pangong Tso lake day trip. Day 4: Hemis Monastery, Thiksey Monastery, Shey Palace. Evening: Leh market for souvenirs."
+  },
+  {
+    "id": "agra_overview",
+    "title": "Agra Overview",
+    "content": "Agra is home to the iconic Taj Mahal, one of the Seven Wonders of the World. Located in Uttar Pradesh on the banks of the Yamuna River. Key attractions: Taj Mahal, Agra Fort (UNESCO site), Fatehpur Sikri, Mehtab Bagh, Itimad-ud-Daulah (Baby Taj). Famous for marble inlay work, leather goods, and petha sweet."
+  },
+  {
+    "id": "agra_day_plan",
+    "title": "Agra - Day plan",
+    "content": "Day 1: Sunrise at Taj Mahal, breakfast, Agra Fort. Afternoon: Itimad-ud-Daulah, Mehtab Bagh for sunset view of Taj. Day 2: Day trip to Fatehpur Sikri (40 km). Evening: Sadar Bazaar shopping, local Mughlai cuisine."
+  }
+]
