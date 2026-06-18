@@ -203,3 +203,25 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
         plan["budget"] = compute_fallback_budget(budget)
 
     return plan
+
+
+def plan_trip_optimized(destination: str, days: int, budget: int, prefer: Optional[str] = None, memory: Optional[ConversationBufferMemory] = None, travel_style: Optional[str] = None, dietary_filters: Optional[str] = None) -> TripPlan:
+    logger.info("Starting optimized planning for %s (%d days, ₹%d)", destination, days, budget)
+    initial_plan = plan_trip_with_agent(
+        destination, days, budget, prefer,
+        memory=memory, travel_style=travel_style, dietary_filters=dietary_filters,
+    )
+    initial_count = len(initial_plan.get("itinerary", []))
+    logger.info("Initial plan has %d itinerary items", initial_count)
+
+    initial_text = "\n".join(initial_plan.get("itinerary", []))
+    refine_prefer = f"{prefer or 'no specific preference'} | Refinement: Here is the initial plan:\n{initial_text}\n\nPlease optimize this plan to include more activities and better experiences while strictly staying within ₹{budget}. Improve the itinerary and adjust the budget breakdown for maximum value."
+
+    improved_plan = plan_trip_with_agent(
+        destination, days, budget, refine_prefer,
+        memory=memory, travel_style=travel_style, dietary_filters=dietary_filters,
+    )
+    improved_count = len(improved_plan.get("itinerary", []))
+    logger.info("Optimized plan has %d itinerary items (was %d)", improved_count, initial_count)
+
+    return improved_plan
