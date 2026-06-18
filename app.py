@@ -1,5 +1,4 @@
 # app.py
-import os
 import re
 import logging
 import streamlit as st
@@ -10,39 +9,10 @@ load_dotenv()
 from config import settings
 from agent import plan_trip_with_agent
 from tools.maps_tool import google_maps_embed_iframe_url
+from utils import lookup_coords
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 logger = logging.getLogger(__name__)
-
-DESTINATION_COORDS = {
-    "goa": (15.2993, 74.1240),
-    "jaipur": (26.9124, 75.7873),
-    "kerala": (10.8505, 76.2711),
-    "manali": (32.2396, 77.1887),
-    "ladakh": (34.1526, 77.5771),
-    "agra": (27.1767, 78.0081),
-    "delhi": (28.6139, 77.2090),
-    "new delhi": (28.6139, 77.2090),
-    "mumbai": (19.0760, 72.8777),
-    "bangalore": (12.9716, 77.5946),
-    "bengaluru": (12.9716, 77.5946),
-    "chennai": (13.0827, 80.2707),
-    "kolkata": (22.5726, 88.3639),
-    "hyderabad": (17.3850, 78.4867),
-    "udaipur": (24.5854, 73.7125),
-    "varanasi": (25.3176, 82.9739),
-    "rishikesh": (30.0869, 78.2676),
-    "mount abu": (24.5926, 72.7156),
-}
-
-def _lookup_coords(destination: str):
-    key = destination.strip().lower()
-    if key in DESTINATION_COORDS:
-        return DESTINATION_COORDS[key]
-    for k, v in DESTINATION_COORDS.items():
-        if k in key or key in k:
-            return v
-    return (23.0, 79.0)  # central India fallback
 
 st.set_page_config(page_title="AI Travel Planner", layout="wide")
 st.title("✈️ AI Travel Planner Agent")
@@ -139,7 +109,7 @@ with col1:
 
 with col2:
     st.subheader("Map preview")
-    lat, lng = _lookup_coords(default_destination)
+    lat, lng = lookup_coords(default_destination)
     embed_url = google_maps_embed_iframe_url(lat, lng, zoom=9)
     st.components.v1.html(
         f'<iframe src="{embed_url}" width="100%" height="400"></iframe>', height=420

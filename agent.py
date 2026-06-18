@@ -17,6 +17,7 @@ from config import settings
 from tools.booking_tool import booking_search_links
 from tools.maps_tool import google_maps_search_url
 from langchain_classic.memory import ConversationBufferMemory
+from utils import compute_fallback_budget
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -143,17 +144,6 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
     
     if not plan["budget"]:
         logger.info("No budget in LLM response, using fallback split")
-        travel = int(budget * 0.25)
-        stay = int(budget * 0.35)
-        food = int(budget * 0.2)
-        activities = int(budget * 0.15)
-        buffer = budget - (travel + stay + food + activities)
-        plan["budget"] = {
-            "travel": travel,
-            "stay": stay,
-            "food": food,
-            "activities": activities,
-            "buffer": buffer
-        }
+        plan["budget"] = compute_fallback_budget(budget)
 
     return plan  # type: ignore[no-any-return]
