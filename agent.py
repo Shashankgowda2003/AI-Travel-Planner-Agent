@@ -3,7 +3,7 @@ import os
 import json
 import logging
 import time
-from typing import Dict, Any, Optional
+from typing import Optional
 
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_chroma import Chroma
@@ -18,6 +18,7 @@ from tools.booking_tool import booking_search_links
 from tools.maps_tool import google_maps_search_url
 from langchain_classic.memory import ConversationBufferMemory
 from utils import compute_fallback_budget
+from trip_types import TripPlan
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -64,7 +65,7 @@ llm = ChatOpenAI(
 
 ORIGIN = settings.origin_city
 
-def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optional[str] = None, memory: Optional[ConversationBufferMemory] = None) -> Dict[str, Any]:
+def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optional[str] = None, memory: Optional[ConversationBufferMemory] = None) -> TripPlan:
     """
     Top-level function to craft a trip plan. Uses:
       - ChromaDB to fetch local knowledge
@@ -147,4 +148,4 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
         logger.info("No budget in LLM response, using fallback split")
         plan["budget"] = compute_fallback_budget(budget)
 
-    return plan  # type: ignore[no-any-return]
+    return plan
