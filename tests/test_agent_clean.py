@@ -121,3 +121,8 @@ class TestAgentNoDeadCode:
             assert path in source, (
                 f"Expected import from '{path}' in agent.py"
             )
+
+    def test_chain_uses_invoke_not_run(self):
+        source = AGENT_PATH.read_text(encoding="utf-8")
+        assert ".invoke(" in source, "Expected chain.invoke() instead of chain.run()"
+        assert ".run(" not in source, "chain.run() is deprecated, use chain.invoke()"

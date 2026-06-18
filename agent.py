@@ -118,7 +118,8 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
     chain = LLMChain(llm=llm, prompt=prompt)
     logger.info("Calling LLM for %s (%d days, ₹%d)", destination, days, budget)
     t0 = time.time()
-    llm_response = chain.run(template_vals)
+    result = chain.invoke(template_vals)
+    llm_response = result.get("text", "") if isinstance(result, dict) else str(result)
     logger.info("LLM call completed in %.2fs", time.time() - t0)
 
     # Parse JSON from LLM (structured output ensures valid JSON)
