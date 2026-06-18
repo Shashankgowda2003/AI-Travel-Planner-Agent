@@ -11,6 +11,8 @@ from langchain_core.documents import Document
 from langchain_core.prompts import PromptTemplate
 from langchain_classic.chains import LLMChain
 
+from config import settings
+
 # local tools
 from tools.booking_tool import booking_search_links
 from tools.maps_tool import google_maps_search_url
@@ -20,10 +22,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(na
 logger = logging.getLogger(__name__)
 
 # Chromadb persist dir
-PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", "./chroma_db")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+PERSIST_DIR = settings.chroma_persist_dir
 
-if not OPENAI_API_KEY:
+if not settings.openai_api_key:
     raise ValueError(
         "OPENAI_API_KEY is not set. Create a .env file with your OpenAI API key "
         "or set the OPENAI_API_KEY environment variable."
@@ -55,12 +56,12 @@ def create_or_load_chroma():
 
 # initialize LLM
 llm = ChatOpenAI(
-    model="gpt-4",
-    temperature=0.2,
+    model=settings.model_name,
+    temperature=settings.temperature,
     model_kwargs={"response_format": {"type": "json_object"}},
 )
 
-ORIGIN = os.getenv("ORIGIN_CITY", "Bangalore")
+ORIGIN = settings.origin_city
 
 def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optional[str] = None, memory: Optional[ConversationBufferMemory] = None) -> Dict[str, Any]:
     """

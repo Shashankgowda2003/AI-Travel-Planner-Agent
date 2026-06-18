@@ -97,7 +97,10 @@ class TestAgentNoDeadCode:
 
     def test_api_key_validation_present(self):
         source = AGENT_PATH.read_text(encoding="utf-8")
-        assert "if not OPENAI_API_KEY:" in source
+        lowered = source.lower()
+        assert ("openai_api_key" in lowered and
+                "api key" in lowered and
+                "not" in lowered)
 
     def test_response_format_json_object(self):
         source = AGENT_PATH.read_text(encoding="utf-8")

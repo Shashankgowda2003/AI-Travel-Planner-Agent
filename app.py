@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+from config import settings
 from agent import plan_trip_with_agent
 from tools.maps_tool import google_maps_embed_iframe_url
 
@@ -46,16 +47,15 @@ def _lookup_coords(destination: str):
 st.set_page_config(page_title="AI Travel Planner", layout="wide")
 st.title("✈️ AI Travel Planner Agent")
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
+if not settings.openai_api_key:
     st.error("OPENAI_API_KEY is not set. Create a .env file with your OpenAI API key.")
     st.stop()
 
 with st.sidebar:
     st.header("Default Trip Parameters")
     default_destination = st.text_input("Destination", value="Goa")
-    default_days = st.number_input("Number of days", min_value=1, max_value=14, value=3)
-    default_budget = st.number_input("Budget (₹)", min_value=500, value=10000, step=500)
+    default_days = st.number_input("Number of days", min_value=1, max_value=settings.max_days, value=settings.default_days)
+    default_budget = st.number_input("Budget (₹)", min_value=500, value=settings.default_budget, step=500)
     prefer = st.text_input("Preferences", value="beach, budget")
 
 col1, col2 = st.columns((2, 1))
