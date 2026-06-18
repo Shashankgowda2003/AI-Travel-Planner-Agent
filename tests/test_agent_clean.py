@@ -25,6 +25,15 @@ USEFUL_IMPORTS = [
     "ConversationBufferMemory",
 ]
 
+NEW_IMPORT_PATHS = [
+    "langchain_openai",
+    "langchain_chroma",
+    "langchain_core.documents",
+    "langchain_core.prompts",
+    "langchain_classic.chains",
+    "langchain_classic.memory",
+]
+
 
 def _parse_agent_source():
     source = AGENT_PATH.read_text(encoding="utf-8")
@@ -102,3 +111,10 @@ class TestAgentNoDeadCode:
     def test_india_destinations_referenced(self):
         source = AGENT_PATH.read_text(encoding="utf-8")
         assert "india_destinations.json" in source
+
+    def test_modern_import_paths(self):
+        source = AGENT_PATH.read_text(encoding="utf-8")
+        for path in NEW_IMPORT_PATHS:
+            assert path in source, (
+                f"Expected import from '{path}' in agent.py"
+            )
