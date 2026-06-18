@@ -11,7 +11,7 @@ from langchain_core.documents import Document
 from langchain_core.prompts import PromptTemplate
 from langchain_classic.chains import LLMChain
 
-from config import settings
+from config import settings, STYLE_PROMPTS
 
 # local tools
 from tools.booking_tool import booking_search_links
@@ -66,13 +66,14 @@ llm = ChatOpenAI(
 
 ORIGIN = settings.origin_city
 
-def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optional[str] = None, memory: Optional[ConversationBufferMemory] = None) -> TripPlan:
+def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optional[str] = None, memory: Optional[ConversationBufferMemory] = None, travel_style: Optional[str] = None, dietary_filters: Optional[str] = None) -> TripPlan:
     """
     Top-level function to craft a trip plan. Uses:
       - ChromaDB to fetch local knowledge
-      - LLM to synthesize an itinerary & budget
+      - LLM to synthesize an itinerary, budget, & packing list
       - weather & booking tools
       - optional ConversationBufferMemory for multi-turn refinement
+      - travel style and dietary/accessibility filters
     """
     logger.info("Loading ChromaDB from %s", PERSIST_DIR)
     t0 = time.time()
@@ -89,20 +90,34 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
     weather_context = format_weather_context(weather_data)
     logger.info("Weather fetched for %s", destination)
 
+    # build style context
+    style_context = ""
+    if travel_style and travel_style in STYLE_PROMPTS:
+        style_context = f"Travel Style: {travel_style}. {STYLE_PROMPTS[travel_style]}\n"
+
+    filter_context = ""
+    if dietary_filters:
+        filter_context = f"Additional Requirements: {dietary_filters}\n"
+
     # build a prompt for LLM
     prompt = PromptTemplate(
-        input_variables=["destination", "days", "budget", "preferences", "context", "weather", "chat_history"],
+        input_variables=["destination", "days", "budget", "preferences", "context", "weather", "style", "filters", "chat_history"],
         template=(
             "You are a helpful travel planner. Use the context and weather to produce a concise output:\n\n"
             "1) Day-wise itinerary (for {days} days) for {destination}. Adjust activities based on weather "
             "(e.g., indoor activities on rainy days, outdoor on clear days, early morning tours on hot days).\n"
             "2) Budget breakdown that keeps total <= ₹{budget}. Use categories: travel, stay, food, activities, buffer.\n"
-            "3) Short bullet list of booking links and map URLs.\n\n"
+            "3) Packing list: Based on weather, season, and activities, provide a categorized packing checklist "
+            "with categories: Clothing, Toiletries, Electronics, Documents, Gear, Medicines.\n"
+            "4) Short bullet list of booking links and map URLs.\n\n"
             "Context: {context}\n"
             "Weather Forecast:\n{weather}\n"
+            "{style}"
+            "{filters}"
             "User Preferences: {preferences}\n\n"
             "Previous conversation (for refinement): {chat_history}\n\n"
-            "Return a JSON object with keys: itinerary (list of day strings), budget (dict), links (dict)."
+            "Return a JSON object with keys: itinerary (list of day strings), budget (dict), "
+            "packing_list (list of strings), links (dict)."
         )
     )
 
@@ -122,6 +137,8 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
         "preferences": prefer or "no specific preference",
         "context": context_text,
         "weather": weather_context,
+        "style": style_context,
+        "filters": filter_context,
         "chat_history": chat_context
     }
 

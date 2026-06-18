@@ -21,7 +21,8 @@ class Links(TypedDict, total=False):
     maps_search: str
 
 
-class TripPlan(TypedDict):
+class TripPlan(TypedDict, total=False):
     itinerary: List[str]
     budget: Budget
     links: Links
+    packing_list: List[str]

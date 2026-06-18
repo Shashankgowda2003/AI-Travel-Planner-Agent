@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from config import settings
+from config import settings, DIETARY_OPTIONS, ACCESSIBILITY_OPTIONS, TRAVEL_STYLES
 from agent import plan_trip_with_agent
 from tools.maps_tool import google_maps_embed_iframe_url
 from utils import lookup_coords
@@ -35,6 +35,10 @@ with st.sidebar:
     default_days = st.number_input("Number of days", min_value=1, max_value=settings.max_days, value=settings.default_days)
     default_budget = st.number_input("Budget (\u20b9)", min_value=500, value=settings.default_budget, step=500)
     prefer = st.text_input("Preferences", value="beach, budget")
+    travel_style = st.selectbox("Travel Style", TRAVEL_STYLES, index=TRAVEL_STYLES.index("budget"))
+    with st.expander("Advanced Filters"):
+        dietary = st.multiselect("Dietary Restrictions", DIETARY_OPTIONS, default=["No restriction"])
+        accessibility = st.multiselect("Accessibility Needs", ACCESSIBILITY_OPTIONS, default=["None"])
 
 col1, col2 = st.columns((2, 1))
 
@@ -66,11 +70,17 @@ with col1:
 
         logger.info("Planning trip: dest=%s, days=%d, budget=%d, preferences=%s", dest, days, budget, active_prefer)
 
+        dietary_filter = ""
+        if "No restriction" not in dietary and dietary:
+            dietary_filter += f"Dietary restrictions: {', '.join(dietary)}. "
+        if "None" not in accessibility and accessibility:
+            dietary_filter += f"Accessibility needs: {', '.join(accessibility)}. "
+
         st.session_state.memory.chat_memory.add_user_message(query)
 
         try:
             with st.spinner(f"Planning {days}-day trip to {dest} within \u20b9{budget}..."):
-                plan = plan_trip_with_agent(dest, days, budget, active_prefer, memory=st.session_state.memory)
+                plan = plan_trip_with_agent(dest, days, budget, active_prefer, memory=st.session_state.memory, travel_style=travel_style, dietary_filters=dietary_filter if dietary_filter else None)
         except Exception as e:
             logger.error("Trip planning failed: %s", e, exc_info=True)
             st.error(f"Failed to generate trip plan: {e}")
@@ -116,6 +126,11 @@ with col1:
 
         if "maps_search" in links:
             st.write(f"\U0001f5fa Map: [Open in Google Maps]({links['maps_search']})")
+
+        if plan.get("packing_list"):
+            with st.expander("\U0001f392 Packing Checklist"):
+                for item in plan["packing_list"]:
+                    st.markdown(f"- {item}")
 
     if st.session_state.get("last_plan"):
         st.divider()

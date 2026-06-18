@@ -2,161 +2,601 @@
   {
     "id": "goa_overview",
     "title": "Goa Overview",
-    "content": "Goa is a coastal state in India known for its beaches, seafood, nightlife, Portuguese heritage and historic churches. Main tourist areas: North Goa (Baga, Calangute, Anjuna), South Goa (Colva, Palolem). Popular activities: beach time, water sports, sightseeing at Fort Aguada, Basilica of Bom Jesus, and night markets."
+    "content": "Goa is a coastal state in India known for its beaches, seafood, nightlife, Portuguese heritage and historic churches. Main tourist areas: North Goa (Baga, Calangute, Anjuna), South Goa (Colva, Palolem). Popular activities: beach time, water sports, sightseeing at Fort Aguada, Basilica of Bom Jesus, and night markets.",
+    "best_season": "November-March",
+    "festivals": [
+      {
+        "name": "Goa Carnival",
+        "month": "February"
+      },
+      {
+        "name": "Sunburn Festival",
+        "month": "December"
+      }
+    ]
   },
   {
     "id": "goa_day_plan",
     "title": "Goa - Day plan",
-    "content": "Day 1: North Goa - Fort Aguada, Sinquerim, Calangute and Baga beaches, water sports, Saturday Night Market. Day 2: South Goa - Palolem/Colva beach, dolphin-spotting boat trip, quiet beach dinner. Day 3: Heritage - Basilica of Bom Jesus, Se Cathedral, Fontainhas in Panjim, spice plantation tour."
+    "content": "Day 1: North Goa - Fort Aguada, Sinquerim, Calangute and Baga beaches, water sports, Saturday Night Market. Day 2: South Goa - Palolem/Colva beach, dolphin-spotting boat trip, quiet beach dinner. Day 3: Heritage - Basilica of Bom Jesus, Se Cathedral, Fontainhas in Panjim, spice plantation tour.",
+    "best_season": "November-March",
+    "festivals": [
+      {
+        "name": "Goa Carnival",
+        "month": "February"
+      },
+      {
+        "name": "Sunburn Festival",
+        "month": "December"
+      }
+    ]
   },
   {
     "id": "jaipur_overview",
     "title": "Jaipur Overview",
-    "content": "Jaipur, the Pink City of Rajasthan, is known for its royal palaces, majestic forts, vibrant bazaars, and rich Rajput heritage. Popular attractions: Amer Fort, Hawa Mahal, City Palace, Jantar Mantar. Famous for handicrafts, textiles, gemstones, and Rajasthani cuisine like dal baati churma."
+    "content": "Jaipur, the Pink City of Rajasthan, is known for its royal palaces, majestic forts, vibrant bazaars, and rich Rajput heritage. Popular attractions: Amer Fort, Hawa Mahal, City Palace, Jantar Mantar. Famous for handicrafts, textiles, gemstones, and Rajasthani cuisine like dal baati churma.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Jaipur Literature Festival",
+        "month": "January"
+      },
+      {
+        "name": "Elephant Festival",
+        "month": "March"
+      },
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      }
+    ]
   },
   {
     "id": "jaipur_day_plan",
     "title": "Jaipur - Day plan",
-    "content": "Day 1: Amer Fort with elephant ride, City Palace, Jantar Mantar, Hawa Mahal photo stop. Evening: Shopping at Johari Bazaar, Bapu Bazaar. Dinner at Chokhi Dhani for authentic Rajasthani experience. Day 2: Nahargarh Fort sunrise, Jaigarh Fort, Albert Hall Museum, Birla Mandir. Evening: Local food walk in old city."
+    "content": "Day 1: Amer Fort with elephant ride, City Palace, Jantar Mantar, Hawa Mahal photo stop. Evening: Shopping at Johari Bazaar, Bapu Bazaar. Dinner at Chokhi Dhani for authentic Rajasthani experience. Day 2: Nahargarh Fort sunrise, Jaigarh Fort, Albert Hall Museum, Birla Mandir. Evening: Local food walk in old city.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Jaipur Literature Festival",
+        "month": "January"
+      },
+      {
+        "name": "Elephant Festival",
+        "month": "March"
+      },
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      }
+    ]
   },
   {
     "id": "kerala_overview",
     "title": "Kerala Overview",
-    "content": "Kerala, God's Own Country, offers serene backwaters, lush tea gardens, pristine beaches, and rich cultural experiences. Must-visit: Alleppey houseboat cruise, Munnar tea plantations, Kovalam beach, Periyar wildlife sanctuary, and Kathakali dance performances. Famous for Ayurvedic spa treatments and seafood."
+    "content": "Kerala, God's Own Country, offers serene backwaters, lush tea gardens, pristine beaches, and rich cultural experiences. Must-visit: Alleppey houseboat cruise, Munnar tea plantations, Kovalam beach, Periyar wildlife sanctuary, and Kathakali dance performances. Famous for Ayurvedic spa treatments and seafood.",
+    "best_season": "September-March",
+    "festivals": [
+      {
+        "name": "Onam",
+        "month": "August-September"
+      },
+      {
+        "name": "Theyyam",
+        "month": "December-April"
+      },
+      {
+        "name": "Kochi-Muziris Biennale",
+        "month": "December-March"
+      }
+    ]
   },
   {
     "id": "kerala_day_plan",
     "title": "Kerala - Day plan",
-    "content": "Day 1: Kochi arrival, Fort Kochi, Chinese fishing nets, Jew Town, Mattancherry Palace. Day 2: Munnar tea gardens, Echo Point, Mattupetty Dam, Top Station. Day 3: Alleppey houseboat backwater cruise, Vembanad Lake. Day 4: Kovalam beach, Ayurvedic spa. Evening: Kathakali performance."
+    "content": "Day 1: Kochi arrival, Fort Kochi, Chinese fishing nets, Jew Town, Mattancherry Palace. Day 2: Munnar tea gardens, Echo Point, Mattupetty Dam, Top Station. Day 3: Alleppey houseboat backwater cruise, Vembanad Lake. Day 4: Kovalam beach, Ayurvedic spa. Evening: Kathakali performance.",
+    "best_season": "September-March",
+    "festivals": [
+      {
+        "name": "Onam",
+        "month": "August-September"
+      },
+      {
+        "name": "Theyyam",
+        "month": "December-April"
+      },
+      {
+        "name": "Kochi-Muziris Biennale",
+        "month": "December-March"
+      }
+    ]
   },
   {
     "id": "manali_overview",
     "title": "Manali Overview",
-    "content": "Manali is a popular hill station in Himachal Pradesh, nestled in the Beas River valley. Known for adventure sports, snow-capped peaks, and pine forests. Top spots: Solang Valley, Rohtang Pass, Hadimba Temple, Old Manali cafes, Vashisht hot springs, and Jogini Falls. Ideal for trekking, paragliding, skiing, and river rafting."
+    "content": "Manali is a popular hill station in Himachal Pradesh, nestled in the Beas River valley. Known for adventure sports, snow-capped peaks, and pine forests. Top spots: Solang Valley, Rohtang Pass, Hadimba Temple, Old Manali cafes, Vashisht hot springs, and Jogini Falls. Ideal for trekking, paragliding, skiing, and river rafting.",
+    "best_season": "March-June, October-February",
+    "festivals": [
+      {
+        "name": "Winter Carnival",
+        "month": "January"
+      },
+      {
+        "name": "Dussehra",
+        "month": "October"
+      }
+    ]
   },
   {
     "id": "manali_day_plan",
     "title": "Manali - Day plan",
-    "content": "Day 1: Hadimba Temple, Old Manali exploration, Manu Temple, Mall Road, Vashisht hot springs. Day 2: Solang Valley for adventure sports - paragliding, zorbing, ropeway ride, skiing (winter). Day 3: Rohtang Pass snow experience (May-Nov), Rahala Falls, Gulaba. Evening: Cafe hopping in Old Manali."
+    "content": "Day 1: Hadimba Temple, Old Manali exploration, Manu Temple, Mall Road, Vashisht hot springs. Day 2: Solang Valley for adventure sports - paragliding, zorbing, ropeway ride, skiing (winter). Day 3: Rohtang Pass snow experience (May-Nov), Rahala Falls, Gulaba. Evening: Cafe hopping in Old Manali.",
+    "best_season": "March-June, October-February",
+    "festivals": [
+      {
+        "name": "Winter Carnival",
+        "month": "January"
+      },
+      {
+        "name": "Dussehra",
+        "month": "October"
+      }
+    ]
   },
   {
     "id": "ladakh_overview",
     "title": "Ladakh Overview",
-    "content": "Ladakh is a high-altitude desert region in northern India known for stunning landscapes, Buddhist monasteries, and adventure tourism. Must-visit: Pangong Tso lake, Nubra Valley sand dunes, Khardung La pass (one of world's highest motorable roads). Famous monasteries: Hemis, Thiksey, Diskit. Best visited June-September. Activities: trekking, biking, river rafting."
+    "content": "Ladakh is a high-altitude desert region in northern India known for stunning landscapes, Buddhist monasteries, and adventure tourism. Must-visit: Pangong Tso lake, Nubra Valley sand dunes, Khardung La pass (one of world's highest motorable roads). Famous monasteries: Hemis, Thiksey, Diskit. Best visited June-September. Activities: trekking, biking, river rafting.",
+    "best_season": "June-September",
+    "festivals": [
+      {
+        "name": "Hemis Festival",
+        "month": "June-July"
+      },
+      {
+        "name": "Ladakh Festival",
+        "month": "September"
+      }
+    ]
   },
   {
     "id": "ladakh_day_plan",
     "title": "Ladakh - Day plan",
-    "content": "Day 1: Leh acclimatization, Shanti Stupa, Leh Palace, Leh market. Day 2: Khardung La pass, Nubra Valley, Diskit Monastery, Hunder sand dunes camel safari. Day 3: Pangong Tso lake day trip via Chang La pass, return to Leh. Day 4: Hemis Monastery, Thiksey Monastery, Shey Palace, Stok Palace Museum."
+    "content": "Day 1: Leh acclimatization, Shanti Stupa, Leh Palace, Leh market. Day 2: Khardung La pass, Nubra Valley, Diskit Monastery, Hunder sand dunes camel safari. Day 3: Pangong Tso lake day trip via Chang La pass, return to Leh. Day 4: Hemis Monastery, Thiksey Monastery, Shey Palace, Stok Palace Museum.",
+    "best_season": "June-September",
+    "festivals": [
+      {
+        "name": "Hemis Festival",
+        "month": "June-July"
+      },
+      {
+        "name": "Ladakh Festival",
+        "month": "September"
+      }
+    ]
   },
   {
     "id": "agra_overview",
     "title": "Agra Overview",
-    "content": "Agra is home to the iconic Taj Mahal, one of the Seven Wonders of the World. Located in Uttar Pradesh on the banks of the Yamuna River. Key attractions: Taj Mahal, Agra Fort (UNESCO site), Fatehpur Sikri, Mehtab Bagh, Itimad-ud-Daulah (Baby Taj). Famous for marble inlay work, leather goods, and petha sweet."
+    "content": "Agra is home to the iconic Taj Mahal, one of the Seven Wonders of the World. Located in Uttar Pradesh on the banks of the Yamuna River. Key attractions: Taj Mahal, Agra Fort (UNESCO site), Fatehpur Sikri, Mehtab Bagh, Itimad-ud-Daulah (Baby Taj). Famous for marble inlay work, leather goods, and petha sweet.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Taj Mahotsav",
+        "month": "February"
+      },
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      }
+    ]
   },
   {
     "id": "agra_day_plan",
     "title": "Agra - Day plan",
-    "content": "Day 1: Sunrise at Taj Mahal for iconic views, breakfast, Agra Fort. Afternoon: Itimad-ud-Daulah (Baby Taj), Mehtab Bagh for sunset view of Taj across the Yamuna. Day 2: Day trip to Fatehpur Sikri (40 km) - Buland Darwaza, Panch Mahal, Salim Chishti Dargah. Evening: Sadar Bazaar shopping for marble souvenirs, local Mughlai cuisine."
+    "content": "Day 1: Sunrise at Taj Mahal for iconic views, breakfast, Agra Fort. Afternoon: Itimad-ud-Daulah (Baby Taj), Mehtab Bagh for sunset view of Taj across the Yamuna. Day 2: Day trip to Fatehpur Sikri (40 km) - Buland Darwaza, Panch Mahal, Salim Chishti Dargah. Evening: Sadar Bazaar shopping for marble souvenirs, local Mughlai cuisine.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Taj Mahotsav",
+        "month": "February"
+      },
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      }
+    ]
   },
   {
     "id": "delhi_overview",
     "title": "Delhi Overview",
-    "content": "Delhi, India's capital, blends Mughal history with modern urban life. Old Delhi features Red Fort, Jama Masjid, Chandni Chowk street food, and bustling bazaars. New Delhi showcases India Gate, Rashtrapati Bhavan, Qutub Minar, Humayun's Tomb, and Lotus Temple. Best visited October-March. Famous for street food like chole bhature, parathas, and butter chicken."
+    "content": "Delhi, India's capital, blends Mughal history with modern urban life. Old Delhi features Red Fort, Jama Masjid, Chandni Chowk street food, and bustling bazaars. New Delhi showcases India Gate, Rashtrapati Bhavan, Qutub Minar, Humayun's Tomb, and Lotus Temple. Best visited October-March. Famous for street food like chole bhature, parathas, and butter chicken.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      },
+      {
+        "name": "Republic Day Parade",
+        "month": "January"
+      },
+      {
+        "name": "Dilli Haat Festival",
+        "month": "November"
+      }
+    ]
   },
   {
     "id": "delhi_day_plan",
     "title": "Delhi - Day plan",
-    "content": "Day 1: Old Delhi - Red Fort, Jama Masjid, rickshaw ride in Chandni Chowk, paratha breakfast at Paranthe Wali Gali. Afternoon: Raj Ghat, National Museum. Evening: India Gate and Connaught Place. Day 2: New Delhi - Qutub Minar, Humayun's Tomb, Lotus Temple, Akshardham Temple. Evening: Hauz Khas Village for dining and nightlife. Day 3: Rashtrapati Bhavan, India Gate lawns, Lodhi Garden, Dilli Haat for handicrafts."
+    "content": "Day 1: Old Delhi - Red Fort, Jama Masjid, rickshaw ride in Chandni Chowk, paratha breakfast at Paranthe Wali Gali. Afternoon: Raj Ghat, National Museum. Evening: India Gate and Connaught Place. Day 2: New Delhi - Qutub Minar, Humayun's Tomb, Lotus Temple, Akshardham Temple. Evening: Hauz Khas Village for dining and nightlife. Day 3: Rashtrapati Bhavan, India Gate lawns, Lodhi Garden, Dilli Haat for handicrafts.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      },
+      {
+        "name": "Republic Day Parade",
+        "month": "January"
+      },
+      {
+        "name": "Dilli Haat Festival",
+        "month": "November"
+      }
+    ]
   },
   {
     "id": "mumbai_overview",
     "title": "Mumbai Overview",
-    "content": "Mumbai, India's financial capital and Bollywood hub, sits on the Arabian Sea coast. Key attractions: Gateway of India, Marine Drive, Elephanta Caves (UNESCO), Chhatrapati Shivaji Maharaj Terminus, Juhu Beach, Bandra-Worli Sea Link, and Sanjay Gandhi National Park. Famous for vada pav, pav bhaji, bhel puri street food, and Bollywood film city tours. Best visited November-February."
+    "content": "Mumbai, India's financial capital and Bollywood hub, sits on the Arabian Sea coast. Key attractions: Gateway of India, Marine Drive, Elephanta Caves (UNESCO), Chhatrapati Shivaji Maharaj Terminus, Juhu Beach, Bandra-Worli Sea Link, and Sanjay Gandhi National Park. Famous for vada pav, pav bhaji, bhel puri street food, and Bollywood film city tours. Best visited November-February.",
+    "best_season": "November-February",
+    "festivals": [
+      {
+        "name": "Ganesh Chaturthi",
+        "month": "August-September"
+      },
+      {
+        "name": "Kala Ghoda Arts Festival",
+        "month": "February"
+      },
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      }
+    ]
   },
   {
     "id": "mumbai_day_plan",
     "title": "Mumbai - Day plan",
-    "content": "Day 1: Gateway of India, Elephanta Caves ferry trip, Colaba Causeway shopping. Evening: Marine Drive sunset walk, Chowpatty Beach food stalls. Day 2: Dhobi Ghat, Mahalaxmi Temple, Haji Ali Dargah, Bandra-Worli Sea Link, Bandra Fort sunset. Evening: Juhu Beach and Linking Road shopping. Day 3: Sanjay Gandhi National Park (Kanheri Caves), Film City studio tour, local street food tour in Mohammed Ali Road."
+    "content": "Day 1: Gateway of India, Elephanta Caves ferry trip, Colaba Causeway shopping. Evening: Marine Drive sunset walk, Chowpatty Beach food stalls. Day 2: Dhobi Ghat, Mahalaxmi Temple, Haji Ali Dargah, Bandra-Worli Sea Link, Bandra Fort sunset. Evening: Juhu Beach and Linking Road shopping. Day 3: Sanjay Gandhi National Park (Kanheri Caves), Film City studio tour, local street food tour in Mohammed Ali Road.",
+    "best_season": "November-February",
+    "festivals": [
+      {
+        "name": "Ganesh Chaturthi",
+        "month": "August-September"
+      },
+      {
+        "name": "Kala Ghoda Arts Festival",
+        "month": "February"
+      },
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      }
+    ]
   },
   {
     "id": "bangalore_overview",
     "title": "Bangalore Overview",
-    "content": "Bangalore (Bengaluru), the Silicon Valley of India, is known for its pleasant climate, lush gardens, vibrant pub culture, and booming tech scene. Key spots: Lalbagh Botanical Garden, Cubbon Park, Bangalore Palace, Tipu Sultan's Summer Palace, ISKCON Temple, and Vidhana Soudha. Famous for craft breweries, filter coffee, masala dosa, and MG Road/Brigade Road shopping. Day trips: Nandi Hills, Mysore, and Shivanasamudra Falls."
+    "content": "Bangalore (Bengaluru), the Silicon Valley of India, is known for its pleasant climate, lush gardens, vibrant pub culture, and booming tech scene. Key spots: Lalbagh Botanical Garden, Cubbon Park, Bangalore Palace, Tipu Sultan's Summer Palace, ISKCON Temple, and Vidhana Soudha. Famous for craft breweries, filter coffee, masala dosa, and MG Road/Brigade Road shopping. Day trips: Nandi Hills, Mysore, and Shivanasamudra Falls.",
+    "best_season": "Year-round (best October-February)",
+    "festivals": [
+      {
+        "name": "Karaga Festival",
+        "month": "March-April"
+      },
+      {
+        "name": "Lalbagh Flower Show",
+        "month": "January/August"
+      },
+      {
+        "name": "Ugadi",
+        "month": "March-April"
+      }
+    ]
   },
   {
     "id": "bangalore_day_plan",
     "title": "Bangalore - Day plan",
-    "content": "Day 1: Lalbagh Botanical Garden morning walk, Bangalore Palace, Tipu Sultan's Summer Palace. Afternoon: Cubbon Park, Vidhana Soudha photo stop, ISKCON Temple. Evening: Church Street and MG Road - pub hopping at craft breweries. Day 2: Day trip to Nandi Hills for sunrise, visit Bhoga Nandeeshwara Temple. Evening: Indiranagar for dining and nightlife. Day 3: Bannerghatta National Park safari, Bull Temple, Basavanagudi food walk for authentic dosas and filter coffee."
+    "content": "Day 1: Lalbagh Botanical Garden morning walk, Bangalore Palace, Tipu Sultan's Summer Palace. Afternoon: Cubbon Park, Vidhana Soudha photo stop, ISKCON Temple. Evening: Church Street and MG Road - pub hopping at craft breweries. Day 2: Day trip to Nandi Hills for sunrise, visit Bhoga Nandeeshwara Temple. Evening: Indiranagar for dining and nightlife. Day 3: Bannerghatta National Park safari, Bull Temple, Basavanagudi food walk for authentic dosas and filter coffee.",
+    "best_season": "Year-round (best October-February)",
+    "festivals": [
+      {
+        "name": "Karaga Festival",
+        "month": "March-April"
+      },
+      {
+        "name": "Lalbagh Flower Show",
+        "month": "January/August"
+      },
+      {
+        "name": "Ugadi",
+        "month": "March-April"
+      }
+    ]
   },
   {
     "id": "chennai_overview",
     "title": "Chennai Overview",
-    "content": "Chennai, the capital of Tamil Nadu on the Coromandel Coast, is known for its rich Dravidian culture, ancient temples, and Marina Beach. Key attractions: Kapaleeshwarar Temple, Fort St. George, Government Museum, San Thome Basilica, and Valluvar Kottam. Famous for filter coffee, idli-sambar, Chettinad cuisine, and Kanchipuram silk sarees. Day trips: Mahabalipuram (UNESCO shore temple), Pondicherry, and Kanchipuram temples."
+    "content": "Chennai, the capital of Tamil Nadu on the Coromandel Coast, is known for its rich Dravidian culture, ancient temples, and Marina Beach. Key attractions: Kapaleeshwarar Temple, Fort St. George, Government Museum, San Thome Basilica, and Valluvar Kottam. Famous for filter coffee, idli-sambar, Chettinad cuisine, and Kanchipuram silk sarees. Day trips: Mahabalipuram (UNESCO shore temple), Pondicherry, and Kanchipuram temples.",
+    "best_season": "November-February",
+    "festivals": [
+      {
+        "name": "Pongal",
+        "month": "January"
+      },
+      {
+        "name": "Chennai Music Season",
+        "month": "December-January"
+      },
+      {
+        "name": "Navaratri",
+        "month": "September-October"
+      }
+    ]
   },
   {
     "id": "chennai_day_plan",
     "title": "Chennai - Day plan",
-    "content": "Day 1: Marina Beach sunrise, Kapaleeshwarar Temple, San Thome Basilica. Afternoon: Fort St. George and Government Museum. Evening: Elliot's Beach, Besant Nagar dining. Day 2: Day trip to Mahabalipuram - Shore Temple, Arjuna's Penance, Five Rathas, Krishna's Butter Ball. Evening: Mylapore walk for filter coffee and temple visits. Day 3: Valluvar Kottam, Theosophical Society, Kalakshetra Foundation. Evening: T Nagar silk saree shopping, authentic Chettinad dinner."
+    "content": "Day 1: Marina Beach sunrise, Kapaleeshwarar Temple, San Thome Basilica. Afternoon: Fort St. George and Government Museum. Evening: Elliot's Beach, Besant Nagar dining. Day 2: Day trip to Mahabalipuram - Shore Temple, Arjuna's Penance, Five Rathas, Krishna's Butter Ball. Evening: Mylapore walk for filter coffee and temple visits. Day 3: Valluvar Kottam, Theosophical Society, Kalakshetra Foundation. Evening: T Nagar silk saree shopping, authentic Chettinad dinner.",
+    "best_season": "November-February",
+    "festivals": [
+      {
+        "name": "Pongal",
+        "month": "January"
+      },
+      {
+        "name": "Chennai Music Season",
+        "month": "December-January"
+      },
+      {
+        "name": "Navaratri",
+        "month": "September-October"
+      }
+    ]
   },
   {
     "id": "kolkata_overview",
     "title": "Kolkata Overview",
-    "content": "Kolkata, the City of Joy and cultural capital of India, is known for its colonial architecture, literary heritage, and vibrant arts scene. Key attractions: Victoria Memorial, Howrah Bridge, Dakshineswar Kali Temple, Kalighat Temple, Indian Museum, and Park Street. Famous for roshogolla, mishti doi, kathi rolls, Bengali fish curry, and Durga Puja celebrations (September-October). Best visited October-March."
+    "content": "Kolkata, the City of Joy and cultural capital of India, is known for its colonial architecture, literary heritage, and vibrant arts scene. Key attractions: Victoria Memorial, Howrah Bridge, Dakshineswar Kali Temple, Kalighat Temple, Indian Museum, and Park Street. Famous for roshogolla, mishti doi, kathi rolls, Bengali fish curry, and Durga Puja celebrations (September-October). Best visited October-March.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Durga Puja",
+        "month": "September-October"
+      },
+      {
+        "name": "Kolkata Book Fair",
+        "month": "January-February"
+      },
+      {
+        "name": "Poila Boishakh",
+        "month": "April"
+      }
+    ]
   },
   {
     "id": "kolkata_day_plan",
     "title": "Kolkata - Day plan",
-    "content": "Day 1: Victoria Memorial, St. Paul's Cathedral, Indian Museum, New Market. Afternoon: Park Street lunch, Mother Teresa's House. Evening: Howrah Bridge sunset view, flower market at Mullick Ghat. Day 2: Dakshineswar Kali Temple, Belur Math, Kumartuli potters' lane. Afternoon: College Street book market, Indian Coffee House. Evening: Princep Ghat riverside walk. Day 3: Kalighat Temple, South City Mall, Science City. Evening: Traditional Bengali dinner, Park Street nightlife."
+    "content": "Day 1: Victoria Memorial, St. Paul's Cathedral, Indian Museum, New Market. Afternoon: Park Street lunch, Mother Teresa's House. Evening: Howrah Bridge sunset view, flower market at Mullick Ghat. Day 2: Dakshineswar Kali Temple, Belur Math, Kumartuli potters' lane. Afternoon: College Street book market, Indian Coffee House. Evening: Princep Ghat riverside walk. Day 3: Kalighat Temple, South City Mall, Science City. Evening: Traditional Bengali dinner, Park Street nightlife.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Durga Puja",
+        "month": "September-October"
+      },
+      {
+        "name": "Kolkata Book Fair",
+        "month": "January-February"
+      },
+      {
+        "name": "Poila Boishakh",
+        "month": "April"
+      }
+    ]
   },
   {
     "id": "hyderabad_overview",
     "title": "Hyderabad Overview",
-    "content": "Hyderabad, the City of Pearls, blends Nizami heritage with modern IT hubs. Key attractions: Charminar, Golconda Fort, Qutub Shahi Tombs, Chowmahalla Palace, and Ramoji Film City (world's largest film studio). Famous for Hyderabadi biryani, haleem, Irani chai with Osmania biscuits, and pearl jewelry. Best visited October-February. Shopping at Laad Bazaar for bangles and pearls."
+    "content": "Hyderabad, the City of Pearls, blends Nizami heritage with modern IT hubs. Key attractions: Charminar, Golconda Fort, Qutub Shahi Tombs, Chowmahalla Palace, and Ramoji Film City (world's largest film studio). Famous for Hyderabadi biryani, haleem, Irani chai with Osmania biscuits, and pearl jewelry. Best visited October-February. Shopping at Laad Bazaar for bangles and pearls.",
+    "best_season": "October-February",
+    "festivals": [
+      {
+        "name": "Deccan Festival",
+        "month": "February"
+      },
+      {
+        "name": "Ramzan/Eid",
+        "month": "Varies"
+      },
+      {
+        "name": "Bathukamma",
+        "month": "September-October"
+      }
+    ]
   },
   {
     "id": "hyderabad_day_plan",
     "title": "Hyderabad - Day plan",
-    "content": "Day 1: Charminar, Chowmahalla Palace, Laad Bazaar for bangles and pearls. Lunch at Paradise or Bawarchi for authentic biryani. Afternoon: Salar Jung Museum, Nizam's Museum. Evening: Hussain Sagar Lake, Necklace Road, Lumbini Park laser show. Day 2: Golconda Fort morning exploration with sound and light show history, Qutub Shahi Tombs. Afternoon: Shilparamam crafts village, HITEC City drive. Evening: Authentic Irani chai and Osmania biscuits at Nimrah Cafe. Day 3: Day trip to Ramoji Film City full-day tour. Evening: Falaknuma Palace high tea (if accessible)."
+    "content": "Day 1: Charminar, Chowmahalla Palace, Laad Bazaar for bangles and pearls. Lunch at Paradise or Bawarchi for authentic biryani. Afternoon: Salar Jung Museum, Nizam's Museum. Evening: Hussain Sagar Lake, Necklace Road, Lumbini Park laser show. Day 2: Golconda Fort morning exploration with sound and light show history, Qutub Shahi Tombs. Afternoon: Shilparamam crafts village, HITEC City drive. Evening: Authentic Irani chai and Osmania biscuits at Nimrah Cafe. Day 3: Day trip to Ramoji Film City full-day tour. Evening: Falaknuma Palace high tea (if accessible).",
+    "best_season": "October-February",
+    "festivals": [
+      {
+        "name": "Deccan Festival",
+        "month": "February"
+      },
+      {
+        "name": "Ramzan/Eid",
+        "month": "Varies"
+      },
+      {
+        "name": "Bathukamma",
+        "month": "September-October"
+      }
+    ]
   },
   {
     "id": "udaipur_overview",
     "title": "Udaipur Overview",
-    "content": "Udaipur, the City of Lakes and Venice of the East, is one of Rajasthan's most romantic destinations. Key attractions: City Palace complex, Lake Pichola boat ride, Jag Mandir, Jagdish Temple, Saheliyon-ki-Bari, Sajjangarh Monsoon Palace for sunset, and Fateh Sagar Lake. Famous for miniature paintings, silver jewelry, and Mewari cuisine. Best visited September-March. Known for luxury heritage hotels and lake-view rooftop restaurants."
+    "content": "Udaipur, the City of Lakes and Venice of the East, is one of Rajasthan's most romantic destinations. Key attractions: City Palace complex, Lake Pichola boat ride, Jag Mandir, Jagdish Temple, Saheliyon-ki-Bari, Sajjangarh Monsoon Palace for sunset, and Fateh Sagar Lake. Famous for miniature paintings, silver jewelry, and Mewari cuisine. Best visited September-March. Known for luxury heritage hotels and lake-view rooftop restaurants.",
+    "best_season": "September-March",
+    "festivals": [
+      {
+        "name": "Mewar Festival",
+        "month": "March-April"
+      },
+      {
+        "name": "Shilpgram Crafts Fair",
+        "month": "December"
+      },
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      }
+    ]
   },
   {
     "id": "udaipur_day_plan",
     "title": "Udaipur - Day plan",
-    "content": "Day 1: City Palace museum tour, Crystal Gallery, Jagdish Temple. Afternoon: Lake Pichola boat ride to Jag Mandir. Evening: Rooftop dinner overlooking the lake, cultural show at Bagore-ki-Haveli. Day 2: Sajjangarh Monsoon Palace sunrise for panoramic views, Saheliyon-ki-Bari gardens, Fateh Sagar Lake boating. Afternoon: Vintage car museum, Shilpgram crafts village. Evening: Shopping for miniature paintings in old city lanes. Day 3: Day trip to Kumbhalgarh Fort (84 km, UNESCO) with the Great Wall of India, Ranakpur Jain Temple. Evening: Sunset at Ambrai Ghat."
+    "content": "Day 1: City Palace museum tour, Crystal Gallery, Jagdish Temple. Afternoon: Lake Pichola boat ride to Jag Mandir. Evening: Rooftop dinner overlooking the lake, cultural show at Bagore-ki-Haveli. Day 2: Sajjangarh Monsoon Palace sunrise for panoramic views, Saheliyon-ki-Bari gardens, Fateh Sagar Lake boating. Afternoon: Vintage car museum, Shilpgram crafts village. Evening: Shopping for miniature paintings in old city lanes. Day 3: Day trip to Kumbhalgarh Fort (84 km, UNESCO) with the Great Wall of India, Ranakpur Jain Temple. Evening: Sunset at Ambrai Ghat.",
+    "best_season": "September-March",
+    "festivals": [
+      {
+        "name": "Mewar Festival",
+        "month": "March-April"
+      },
+      {
+        "name": "Shilpgram Crafts Fair",
+        "month": "December"
+      },
+      {
+        "name": "Diwali",
+        "month": "October-November"
+      }
+    ]
   },
   {
     "id": "varanasi_overview",
     "title": "Varanasi Overview",
-    "content": "Varanasi (Banaras), one of the world's oldest living cities on the banks of the Ganges, is India's spiritual heart. Key attractions: Dashashwamedh Ghat for Ganga Aarti, Kashi Vishwanath Temple (Golden Temple), Assi Ghat, Manikarnika Ghat, and Sarnath (Buddha's first sermon site). Famous for Banarasi silk sarees, paan, malaiyo, kachori, and thandai. Best visited October-March. Sunrise boat rides on the Ganges are essential."
+    "content": "Varanasi (Banaras), one of the world's oldest living cities on the banks of the Ganges, is India's spiritual heart. Key attractions: Dashashwamedh Ghat for Ganga Aarti, Kashi Vishwanath Temple (Golden Temple), Assi Ghat, Manikarnika Ghat, and Sarnath (Buddha's first sermon site). Famous for Banarasi silk sarees, paan, malaiyo, kachori, and thandai. Best visited October-March. Sunrise boat rides on the Ganges are essential.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Dev Deepavali",
+        "month": "November"
+      },
+      {
+        "name": "Maha Shivratri",
+        "month": "February-March"
+      },
+      {
+        "name": "Ganga Mahotsav",
+        "month": "November"
+      }
+    ]
   },
   {
     "id": "varanasi_day_plan",
     "title": "Varanasi - Day plan",
-    "content": "Day 1: Sunrise boat ride along the ghats from Assi Ghat to Manikarnika Ghat, visit Kashi Vishwanath Temple, walk through Godowlia market. Afternoon: Bharat Mata Temple, Banaras Hindu University campus, New Vishwanath Temple. Evening: Ganga Aarti ceremony at Dashashwamedh Ghat. Day 2: Day trip to Sarnath (10 km) - Dhamek Stupa, Sarnath Archaeological Museum, Thai Temple. Afternoon: Ramnagar Fort, weavers' village for Banarasi silk saree shopping. Evening: Assi Ghat evening Aarti, traditional Banarasi food walk."
+    "content": "Day 1: Sunrise boat ride along the ghats from Assi Ghat to Manikarnika Ghat, visit Kashi Vishwanath Temple, walk through Godowlia market. Afternoon: Bharat Mata Temple, Banaras Hindu University campus, New Vishwanath Temple. Evening: Ganga Aarti ceremony at Dashashwamedh Ghat. Day 2: Day trip to Sarnath (10 km) - Dhamek Stupa, Sarnath Archaeological Museum, Thai Temple. Afternoon: Ramnagar Fort, weavers' village for Banarasi silk saree shopping. Evening: Assi Ghat evening Aarti, traditional Banarasi food walk.",
+    "best_season": "October-March",
+    "festivals": [
+      {
+        "name": "Dev Deepavali",
+        "month": "November"
+      },
+      {
+        "name": "Maha Shivratri",
+        "month": "February-March"
+      },
+      {
+        "name": "Ganga Mahotsav",
+        "month": "November"
+      }
+    ]
   },
   {
     "id": "rishikesh_overview",
     "title": "Rishikesh Overview",
-    "content": "Rishikesh, the Yoga Capital of the World, sits on the banks of the Ganges in the Himalayan foothills. Known for spirituality, adventure sports, and the Beatles' connection. Key spots: Laxman Jhula, Ram Jhula, Triveni Ghat for evening Ganga Aarti, Beatles Ashram (Maharishi Mahesh Yogi's ashram), and Neelkanth Mahadev Temple. Famous for white water river rafting (September-June), bungee jumping, camping, and yoga retreats. Gateway to Char Dham pilgrimage."
+    "content": "Rishikesh, the Yoga Capital of the World, sits on the banks of the Ganges in the Himalayan foothills. Known for spirituality, adventure sports, and the Beatles' connection. Key spots: Laxman Jhula, Ram Jhula, Triveni Ghat for evening Ganga Aarti, Beatles Ashram (Maharishi Mahesh Yogi's ashram), and Neelkanth Mahadev Temple. Famous for white water river rafting (September-June), bungee jumping, camping, and yoga retreats. Gateway to Char Dham pilgrimage.",
+    "best_season": "September-June",
+    "festivals": [
+      {
+        "name": "International Yoga Festival",
+        "month": "March"
+      },
+      {
+        "name": "Ganga Aarti (daily)",
+        "month": "Year-round"
+      },
+      {
+        "name": "Basant Panchami",
+        "month": "January-February"
+      }
+    ]
   },
   {
     "id": "rishikesh_day_plan",
     "title": "Rishikesh - Day plan",
-    "content": "Day 1: Laxman Jhula walk, Tera Manzil Temple, Beatles Ashram exploration. Afternoon: River rafting from Shivpuri to Rishikesh (Grade 2-3 rapids), cliff jumping. Evening: Ganga Aarti at Triveni Ghat or Parmarth Niketan. Day 2: Early morning yoga session, Ram Jhula walk, explore local cafes (German Bakery, Little Buddha). Afternoon: Bungee jumping at Jumpin Heights, waterfall trek to Neer Garh or Patna Falls. Evening: Sunset at Kunjapuri Temple hilltop drive."
+    "content": "Day 1: Laxman Jhula walk, Tera Manzil Temple, Beatles Ashram exploration. Afternoon: River rafting from Shivpuri to Rishikesh (Grade 2-3 rapids), cliff jumping. Evening: Ganga Aarti at Triveni Ghat or Parmarth Niketan. Day 2: Early morning yoga session, Ram Jhula walk, explore local cafes (German Bakery, Little Buddha). Afternoon: Bungee jumping at Jumpin Heights, waterfall trek to Neer Garh or Patna Falls. Evening: Sunset at Kunjapuri Temple hilltop drive.",
+    "best_season": "September-June",
+    "festivals": [
+      {
+        "name": "International Yoga Festival",
+        "month": "March"
+      },
+      {
+        "name": "Ganga Aarti (daily)",
+        "month": "Year-round"
+      },
+      {
+        "name": "Basant Panchami",
+        "month": "January-February"
+      }
+    ]
   },
   {
     "id": "mount_abu_overview",
     "title": "Mount Abu Overview",
-    "content": "Mount Abu is Rajasthan's only hill station, located in the Aravalli Range near the Gujarat border. Known for cool climate year-round and the exquisite Dilwara Jain Temples with their intricate marble carvings. Key attractions: Dilwara Temples, Nakki Lake boating, Guru Shikhar (highest peak in the Aravallis at 1722m), Sunset Point, and Achalgarh Fort. Famous for Brahma Kumaris Spiritual University headquarters. Best visited year-round, with pleasant summers escaping the desert heat."
+    "content": "Mount Abu is Rajasthan's only hill station, located in the Aravalli Range near the Gujarat border. Known for cool climate year-round and the exquisite Dilwara Jain Temples with their intricate marble carvings. Key attractions: Dilwara Temples, Nakki Lake boating, Guru Shikhar (highest peak in the Aravallis at 1722m), Sunset Point, and Achalgarh Fort. Famous for Brahma Kumaris Spiritual University headquarters. Best visited year-round, with pleasant summers escaping the desert heat.",
+    "best_season": "Year-round (best October-June)",
+    "festivals": [
+      {
+        "name": "Summer Festival",
+        "month": "May"
+      },
+      {
+        "name": "Winter Festival",
+        "month": "December"
+      }
+    ]
   },
   {
     "id": "mount_abu_day_plan",
     "title": "Mount Abu - Day plan",
-    "content": "Day 1: Dilwara Jain Temples (Vimal Vasahi and Luna Vasahi) for exquisite marble architecture, Nakki Lake boating and surrounding market. Afternoon: Toad Rock viewpoint, Sunset Point for panoramic sunset over the hills. Evening: Walking around Nakki Lake bazaar for Rajasthani handicrafts. Day 2: Early morning drive to Guru Shikhar peak for sunrise and 360-degree views, visit the Dattatreya Temple at the summit. Afternoon: Achalgarh Fort, Achleshwar Mahadev Temple. Evening: Peace Park and Brahma Kumaris Universal Peace Hall for meditation."
+    "content": "Day 1: Dilwara Jain Temples (Vimal Vasahi and Luna Vasahi) for exquisite marble architecture, Nakki Lake boating and surrounding market. Afternoon: Toad Rock viewpoint, Sunset Point for panoramic sunset over the hills. Evening: Walking around Nakki Lake bazaar for Rajasthani handicrafts. Day 2: Early morning drive to Guru Shikhar peak for sunrise and 360-degree views, visit the Dattatreya Temple at the summit. Afternoon: Achalgarh Fort, Achleshwar Mahadev Temple. Evening: Peace Park and Brahma Kumaris Universal Peace Hall for meditation.",
+    "best_season": "Year-round (best October-June)",
+    "festivals": [
+      {
+        "name": "Summer Festival",
+        "month": "May"
+      },
+      {
+        "name": "Winter Festival",
+        "month": "December"
+      }
+    ]
   }
 ]
