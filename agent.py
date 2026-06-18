@@ -117,11 +117,39 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
     }
 
     chain = LLMChain(llm=llm, prompt=prompt)
-    logger.info("Calling LLM for %s (%d days, ₹%d)", destination, days, budget)
-    t0 = time.time()
-    result = chain.invoke(template_vals)
-    llm_response = result.get("text", "") if isinstance(result, dict) else str(result)
-    logger.info("LLM call completed in %.2fs", time.time() - t0)
+
+    # Try primary model, then fallback models on failure
+    models_to_try = [settings.model_name] + [m for m in settings.fallback_models if m != settings.model_name]
+    last_error = None
+    llm_response = ""
+
+    for attempt, model_name in enumerate(models_to_try):
+        try:
+            if attempt > 0:
+                logger.warning("Retrying with fallback model: %s", model_name)
+                chain = LLMChain(
+                    llm=ChatOpenAI(
+                        model=model_name,
+                        temperature=settings.temperature,
+                        model_kwargs={"response_format": {"type": "json_object"}},
+                    ),
+                    prompt=prompt,
+                )
+            logger.info("Calling LLM for %s (%d days, \u20b9%d) with model %s", destination, days, budget, model_name)
+            t0 = time.time()
+            result = chain.invoke(template_vals)
+            llm_response = result.get("text", "") if isinstance(result, dict) else str(result)
+            logger.info("LLM call completed in %.2fs", time.time() - t0)
+            break
+        except Exception as e:
+            logger.warning("Model %s failed: %s", model_name, e)
+            last_error = e
+            if attempt < len(models_to_try) - 1:
+                backoff = 2 ** attempt
+                logger.info("Waiting %ds before next attempt...", backoff)
+                time.sleep(backoff)
+    else:
+        raise RuntimeError(f"All models failed. Last error: {last_error}") from last_error
 
     # Parse JSON from LLM (structured output ensures valid JSON)
     try:
