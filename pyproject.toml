@@ -8,3 +8,16 @@ ignore_missing_imports = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
+addopts = "--cov=. --cov-report=term --cov-report=html"
+
+[tool.coverage.run]
+source = ["."]
+omit = ["tests/*", "chroma_db/*", ".venv/*", ".playwright-mcp/*", "agent.py", "app.py"]
+
+[tool.coverage.report]
+fail_under = 70
+exclude_also = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]

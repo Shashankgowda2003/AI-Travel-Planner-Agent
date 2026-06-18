@@ -8,4 +8,5 @@ chromadb
 python-dotenv
 tiktoken
 pytest
+pytest-cov
 mypy

@@ -5,19 +5,9 @@
     "content": "Goa is a coastal state in India known for its beaches, seafood, nightlife, Portuguese heritage and historic churches. Main tourist areas: North Goa (Baga, Calangute, Anjuna), South Goa (Colva, Palolem). Popular activities: beach time, water sports, sightseeing at Fort Aguada, Basilica of Bom Jesus, and night markets."
   },
   {
-    "id": "north_goa_day",
-    "title": "North Goa - Day plan",
-    "content": "Morning: Fort Aguada and Sinquerim. Afternoon: Calangute and Baga beaches, water sports. Evening: Saturday Night Market at Arpora (if open), beach shacks for dinner."
-  },
-  {
-    "id": "south_goa_day",
-    "title": "South Goa - Day plan",
-    "content": "Morning: Relax at Palolem/Colva beach. Afternoon: Dolphin-spotting boat trip. Evening: Quiet beach dinner and strolling."
-  },
-  {
-    "id": "heritage_spots",
-    "title": "Heritage spots",
-    "content": "Basilica of Bom Jesus (Old Goa), Se Cathedral, churches and Portuguese-style houses in Fontainhas, Panjim."
+    "id": "goa_day_plan",
+    "title": "Goa - Day plan",
+    "content": "Day 1: North Goa - Fort Aguada, Sinquerim, Calangute and Baga beaches, water sports, Saturday Night Market. Day 2: South Goa - Palolem/Colva beach, dolphin-spotting boat trip, quiet beach dinner. Day 3: Heritage - Basilica of Bom Jesus, Se Cathedral, Fontainhas in Panjim, spice plantation tour."
   },
   {
     "id": "jaipur_overview",
@@ -27,7 +17,7 @@
   {
     "id": "jaipur_day_plan",
     "title": "Jaipur - Day plan",
-    "content": "Morning: Amer Fort with elephant ride. Afternoon: City Palace, Jantar Mantar, Hawa Mahal photo stop. Evening: Shopping at Johari Bazaar, Bapu Bazaar. Dinner at Chokhi Dhani for authentic Rajasthani experience."
+    "content": "Day 1: Amer Fort with elephant ride, City Palace, Jantar Mantar, Hawa Mahal photo stop. Evening: Shopping at Johari Bazaar, Bapu Bazaar. Dinner at Chokhi Dhani for authentic Rajasthani experience. Day 2: Nahargarh Fort sunrise, Jaigarh Fort, Albert Hall Museum, Birla Mandir. Evening: Local food walk in old city."
   },
   {
     "id": "kerala_overview",
@@ -37,7 +27,7 @@
   {
     "id": "kerala_day_plan",
     "title": "Kerala - Day plan",
-    "content": "Day 1: Kochi arrival, Fort Kochi, Chinese fishing nets. Day 2: Munnar tea gardens, Echo Point, Mattupetty Dam. Day 3: Alleppey houseboat backwater cruise. Day 4: Kovalam beach, Ayurvedic spa. Evening: Kathakali performance."
+    "content": "Day 1: Kochi arrival, Fort Kochi, Chinese fishing nets, Jew Town, Mattancherry Palace. Day 2: Munnar tea gardens, Echo Point, Mattupetty Dam, Top Station. Day 3: Alleppey houseboat backwater cruise, Vembanad Lake. Day 4: Kovalam beach, Ayurvedic spa. Evening: Kathakali performance."
   },
   {
     "id": "manali_overview",
@@ -47,7 +37,7 @@
   {
     "id": "manali_day_plan",
     "title": "Manali - Day plan",
-    "content": "Day 1: Hadimba Temple, Old Manali, Manu Temple, Mall Road. Day 2: Solang Valley for adventure sports (paragliding, zorbing). Day 3: Rohtang Pass snow experience (May-Nov), Vashisht hot springs. Evening: Cafe hopping in Old Manali."
+    "content": "Day 1: Hadimba Temple, Old Manali exploration, Manu Temple, Mall Road, Vashisht hot springs. Day 2: Solang Valley for adventure sports - paragliding, zorbing, ropeway ride, skiing (winter). Day 3: Rohtang Pass snow experience (May-Nov), Rahala Falls, Gulaba. Evening: Cafe hopping in Old Manali."
   },
   {
     "id": "ladakh_overview",
@@ -57,7 +47,7 @@
   {
     "id": "ladakh_day_plan",
     "title": "Ladakh - Day plan",
-    "content": "Day 1: Leh acclimatization, Shanti Stupa, Leh Palace. Day 2: Khardung La, Nubra Valley, Diskit Monastery, camel safari. Day 3: Pangong Tso lake day trip. Day 4: Hemis Monastery, Thiksey Monastery, Shey Palace. Evening: Leh market for souvenirs."
+    "content": "Day 1: Leh acclimatization, Shanti Stupa, Leh Palace, Leh market. Day 2: Khardung La pass, Nubra Valley, Diskit Monastery, Hunder sand dunes camel safari. Day 3: Pangong Tso lake day trip via Chang La pass, return to Leh. Day 4: Hemis Monastery, Thiksey Monastery, Shey Palace, Stok Palace Museum."
   },
   {
     "id": "agra_overview",
@@ -67,6 +57,106 @@
   {
     "id": "agra_day_plan",
     "title": "Agra - Day plan",
-    "content": "Day 1: Sunrise at Taj Mahal, breakfast, Agra Fort. Afternoon: Itimad-ud-Daulah, Mehtab Bagh for sunset view of Taj. Day 2: Day trip to Fatehpur Sikri (40 km). Evening: Sadar Bazaar shopping, local Mughlai cuisine."
+    "content": "Day 1: Sunrise at Taj Mahal for iconic views, breakfast, Agra Fort. Afternoon: Itimad-ud-Daulah (Baby Taj), Mehtab Bagh for sunset view of Taj across the Yamuna. Day 2: Day trip to Fatehpur Sikri (40 km) - Buland Darwaza, Panch Mahal, Salim Chishti Dargah. Evening: Sadar Bazaar shopping for marble souvenirs, local Mughlai cuisine."
+  },
+  {
+    "id": "delhi_overview",
+    "title": "Delhi Overview",
+    "content": "Delhi, India's capital, blends Mughal history with modern urban life. Old Delhi features Red Fort, Jama Masjid, Chandni Chowk street food, and bustling bazaars. New Delhi showcases India Gate, Rashtrapati Bhavan, Qutub Minar, Humayun's Tomb, and Lotus Temple. Best visited October-March. Famous for street food like chole bhature, parathas, and butter chicken."
+  },
+  {
+    "id": "delhi_day_plan",
+    "title": "Delhi - Day plan",
+    "content": "Day 1: Old Delhi - Red Fort, Jama Masjid, rickshaw ride in Chandni Chowk, paratha breakfast at Paranthe Wali Gali. Afternoon: Raj Ghat, National Museum. Evening: India Gate and Connaught Place. Day 2: New Delhi - Qutub Minar, Humayun's Tomb, Lotus Temple, Akshardham Temple. Evening: Hauz Khas Village for dining and nightlife. Day 3: Rashtrapati Bhavan, India Gate lawns, Lodhi Garden, Dilli Haat for handicrafts."
+  },
+  {
+    "id": "mumbai_overview",
+    "title": "Mumbai Overview",
+    "content": "Mumbai, India's financial capital and Bollywood hub, sits on the Arabian Sea coast. Key attractions: Gateway of India, Marine Drive, Elephanta Caves (UNESCO), Chhatrapati Shivaji Maharaj Terminus, Juhu Beach, Bandra-Worli Sea Link, and Sanjay Gandhi National Park. Famous for vada pav, pav bhaji, bhel puri street food, and Bollywood film city tours. Best visited November-February."
+  },
+  {
+    "id": "mumbai_day_plan",
+    "title": "Mumbai - Day plan",
+    "content": "Day 1: Gateway of India, Elephanta Caves ferry trip, Colaba Causeway shopping. Evening: Marine Drive sunset walk, Chowpatty Beach food stalls. Day 2: Dhobi Ghat, Mahalaxmi Temple, Haji Ali Dargah, Bandra-Worli Sea Link, Bandra Fort sunset. Evening: Juhu Beach and Linking Road shopping. Day 3: Sanjay Gandhi National Park (Kanheri Caves), Film City studio tour, local street food tour in Mohammed Ali Road."
+  },
+  {
+    "id": "bangalore_overview",
+    "title": "Bangalore Overview",
+    "content": "Bangalore (Bengaluru), the Silicon Valley of India, is known for its pleasant climate, lush gardens, vibrant pub culture, and booming tech scene. Key spots: Lalbagh Botanical Garden, Cubbon Park, Bangalore Palace, Tipu Sultan's Summer Palace, ISKCON Temple, and Vidhana Soudha. Famous for craft breweries, filter coffee, masala dosa, and MG Road/Brigade Road shopping. Day trips: Nandi Hills, Mysore, and Shivanasamudra Falls."
+  },
+  {
+    "id": "bangalore_day_plan",
+    "title": "Bangalore - Day plan",
+    "content": "Day 1: Lalbagh Botanical Garden morning walk, Bangalore Palace, Tipu Sultan's Summer Palace. Afternoon: Cubbon Park, Vidhana Soudha photo stop, ISKCON Temple. Evening: Church Street and MG Road - pub hopping at craft breweries. Day 2: Day trip to Nandi Hills for sunrise, visit Bhoga Nandeeshwara Temple. Evening: Indiranagar for dining and nightlife. Day 3: Bannerghatta National Park safari, Bull Temple, Basavanagudi food walk for authentic dosas and filter coffee."
+  },
+  {
+    "id": "chennai_overview",
+    "title": "Chennai Overview",
+    "content": "Chennai, the capital of Tamil Nadu on the Coromandel Coast, is known for its rich Dravidian culture, ancient temples, and Marina Beach. Key attractions: Kapaleeshwarar Temple, Fort St. George, Government Museum, San Thome Basilica, and Valluvar Kottam. Famous for filter coffee, idli-sambar, Chettinad cuisine, and Kanchipuram silk sarees. Day trips: Mahabalipuram (UNESCO shore temple), Pondicherry, and Kanchipuram temples."
+  },
+  {
+    "id": "chennai_day_plan",
+    "title": "Chennai - Day plan",
+    "content": "Day 1: Marina Beach sunrise, Kapaleeshwarar Temple, San Thome Basilica. Afternoon: Fort St. George and Government Museum. Evening: Elliot's Beach, Besant Nagar dining. Day 2: Day trip to Mahabalipuram - Shore Temple, Arjuna's Penance, Five Rathas, Krishna's Butter Ball. Evening: Mylapore walk for filter coffee and temple visits. Day 3: Valluvar Kottam, Theosophical Society, Kalakshetra Foundation. Evening: T Nagar silk saree shopping, authentic Chettinad dinner."
+  },
+  {
+    "id": "kolkata_overview",
+    "title": "Kolkata Overview",
+    "content": "Kolkata, the City of Joy and cultural capital of India, is known for its colonial architecture, literary heritage, and vibrant arts scene. Key attractions: Victoria Memorial, Howrah Bridge, Dakshineswar Kali Temple, Kalighat Temple, Indian Museum, and Park Street. Famous for roshogolla, mishti doi, kathi rolls, Bengali fish curry, and Durga Puja celebrations (September-October). Best visited October-March."
+  },
+  {
+    "id": "kolkata_day_plan",
+    "title": "Kolkata - Day plan",
+    "content": "Day 1: Victoria Memorial, St. Paul's Cathedral, Indian Museum, New Market. Afternoon: Park Street lunch, Mother Teresa's House. Evening: Howrah Bridge sunset view, flower market at Mullick Ghat. Day 2: Dakshineswar Kali Temple, Belur Math, Kumartuli potters' lane. Afternoon: College Street book market, Indian Coffee House. Evening: Princep Ghat riverside walk. Day 3: Kalighat Temple, South City Mall, Science City. Evening: Traditional Bengali dinner, Park Street nightlife."
+  },
+  {
+    "id": "hyderabad_overview",
+    "title": "Hyderabad Overview",
+    "content": "Hyderabad, the City of Pearls, blends Nizami heritage with modern IT hubs. Key attractions: Charminar, Golconda Fort, Qutub Shahi Tombs, Chowmahalla Palace, and Ramoji Film City (world's largest film studio). Famous for Hyderabadi biryani, haleem, Irani chai with Osmania biscuits, and pearl jewelry. Best visited October-February. Shopping at Laad Bazaar for bangles and pearls."
+  },
+  {
+    "id": "hyderabad_day_plan",
+    "title": "Hyderabad - Day plan",
+    "content": "Day 1: Charminar, Chowmahalla Palace, Laad Bazaar for bangles and pearls. Lunch at Paradise or Bawarchi for authentic biryani. Afternoon: Salar Jung Museum, Nizam's Museum. Evening: Hussain Sagar Lake, Necklace Road, Lumbini Park laser show. Day 2: Golconda Fort morning exploration with sound and light show history, Qutub Shahi Tombs. Afternoon: Shilparamam crafts village, HITEC City drive. Evening: Authentic Irani chai and Osmania biscuits at Nimrah Cafe. Day 3: Day trip to Ramoji Film City full-day tour. Evening: Falaknuma Palace high tea (if accessible)."
+  },
+  {
+    "id": "udaipur_overview",
+    "title": "Udaipur Overview",
+    "content": "Udaipur, the City of Lakes and Venice of the East, is one of Rajasthan's most romantic destinations. Key attractions: City Palace complex, Lake Pichola boat ride, Jag Mandir, Jagdish Temple, Saheliyon-ki-Bari, Sajjangarh Monsoon Palace for sunset, and Fateh Sagar Lake. Famous for miniature paintings, silver jewelry, and Mewari cuisine. Best visited September-March. Known for luxury heritage hotels and lake-view rooftop restaurants."
+  },
+  {
+    "id": "udaipur_day_plan",
+    "title": "Udaipur - Day plan",
+    "content": "Day 1: City Palace museum tour, Crystal Gallery, Jagdish Temple. Afternoon: Lake Pichola boat ride to Jag Mandir. Evening: Rooftop dinner overlooking the lake, cultural show at Bagore-ki-Haveli. Day 2: Sajjangarh Monsoon Palace sunrise for panoramic views, Saheliyon-ki-Bari gardens, Fateh Sagar Lake boating. Afternoon: Vintage car museum, Shilpgram crafts village. Evening: Shopping for miniature paintings in old city lanes. Day 3: Day trip to Kumbhalgarh Fort (84 km, UNESCO) with the Great Wall of India, Ranakpur Jain Temple. Evening: Sunset at Ambrai Ghat."
+  },
+  {
+    "id": "varanasi_overview",
+    "title": "Varanasi Overview",
+    "content": "Varanasi (Banaras), one of the world's oldest living cities on the banks of the Ganges, is India's spiritual heart. Key attractions: Dashashwamedh Ghat for Ganga Aarti, Kashi Vishwanath Temple (Golden Temple), Assi Ghat, Manikarnika Ghat, and Sarnath (Buddha's first sermon site). Famous for Banarasi silk sarees, paan, malaiyo, kachori, and thandai. Best visited October-March. Sunrise boat rides on the Ganges are essential."
+  },
+  {
+    "id": "varanasi_day_plan",
+    "title": "Varanasi - Day plan",
+    "content": "Day 1: Sunrise boat ride along the ghats from Assi Ghat to Manikarnika Ghat, visit Kashi Vishwanath Temple, walk through Godowlia market. Afternoon: Bharat Mata Temple, Banaras Hindu University campus, New Vishwanath Temple. Evening: Ganga Aarti ceremony at Dashashwamedh Ghat. Day 2: Day trip to Sarnath (10 km) - Dhamek Stupa, Sarnath Archaeological Museum, Thai Temple. Afternoon: Ramnagar Fort, weavers' village for Banarasi silk saree shopping. Evening: Assi Ghat evening Aarti, traditional Banarasi food walk."
+  },
+  {
+    "id": "rishikesh_overview",
+    "title": "Rishikesh Overview",
+    "content": "Rishikesh, the Yoga Capital of the World, sits on the banks of the Ganges in the Himalayan foothills. Known for spirituality, adventure sports, and the Beatles' connection. Key spots: Laxman Jhula, Ram Jhula, Triveni Ghat for evening Ganga Aarti, Beatles Ashram (Maharishi Mahesh Yogi's ashram), and Neelkanth Mahadev Temple. Famous for white water river rafting (September-June), bungee jumping, camping, and yoga retreats. Gateway to Char Dham pilgrimage."
+  },
+  {
+    "id": "rishikesh_day_plan",
+    "title": "Rishikesh - Day plan",
+    "content": "Day 1: Laxman Jhula walk, Tera Manzil Temple, Beatles Ashram exploration. Afternoon: River rafting from Shivpuri to Rishikesh (Grade 2-3 rapids), cliff jumping. Evening: Ganga Aarti at Triveni Ghat or Parmarth Niketan. Day 2: Early morning yoga session, Ram Jhula walk, explore local cafes (German Bakery, Little Buddha). Afternoon: Bungee jumping at Jumpin Heights, waterfall trek to Neer Garh or Patna Falls. Evening: Sunset at Kunjapuri Temple hilltop drive."
+  },
+  {
+    "id": "mount_abu_overview",
+    "title": "Mount Abu Overview",
+    "content": "Mount Abu is Rajasthan's only hill station, located in the Aravalli Range near the Gujarat border. Known for cool climate year-round and the exquisite Dilwara Jain Temples with their intricate marble carvings. Key attractions: Dilwara Temples, Nakki Lake boating, Guru Shikhar (highest peak in the Aravallis at 1722m), Sunset Point, and Achalgarh Fort. Famous for Brahma Kumaris Spiritual University headquarters. Best visited year-round, with pleasant summers escaping the desert heat."
+  },
+  {
+    "id": "mount_abu_day_plan",
+    "title": "Mount Abu - Day plan",
+    "content": "Day 1: Dilwara Jain Temples (Vimal Vasahi and Luna Vasahi) for exquisite marble architecture, Nakki Lake boating and surrounding market. Afternoon: Toad Rock viewpoint, Sunset Point for panoramic sunset over the hills. Evening: Walking around Nakki Lake bazaar for Rajasthani handicrafts. Day 2: Early morning drive to Guru Shikhar peak for sunrise and 360-degree views, visit the Dattatreya Temple at the summit. Afternoon: Achalgarh Fort, Achleshwar Mahadev Temple. Evening: Peace Park and Brahma Kumaris Universal Peace Hall for meditation."
   }
 ]
