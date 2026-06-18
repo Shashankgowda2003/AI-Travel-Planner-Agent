@@ -16,6 +16,7 @@ from config import settings
 # local tools
 from tools.booking_tool import booking_search_links
 from tools.maps_tool import google_maps_search_url
+from tools.weather_tool import get_weather_forecast, format_weather_context
 from langchain_classic.memory import ConversationBufferMemory
 from utils import compute_fallback_budget
 from trip_types import TripPlan
@@ -83,15 +84,22 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
     context_text = "\n".join([d.page_content for d in docs])
     logger.info("Retrieved %d docs for destination '%s'", len(docs), destination)
 
+    # fetch weather forecast
+    weather_data = get_weather_forecast(destination, days=days)
+    weather_context = format_weather_context(weather_data)
+    logger.info("Weather fetched for %s", destination)
+
     # build a prompt for LLM
     prompt = PromptTemplate(
-        input_variables=["destination", "days", "budget", "preferences", "context", "chat_history"],
+        input_variables=["destination", "days", "budget", "preferences", "context", "weather", "chat_history"],
         template=(
-            "You are a helpful travel planner. Use the context to produce a concise 3-part output:\n\n"
-            "1) Day-wise itinerary (for {days} days) for {destination}.\n"
+            "You are a helpful travel planner. Use the context and weather to produce a concise output:\n\n"
+            "1) Day-wise itinerary (for {days} days) for {destination}. Adjust activities based on weather "
+            "(e.g., indoor activities on rainy days, outdoor on clear days, early morning tours on hot days).\n"
             "2) Budget breakdown that keeps total <= ₹{budget}. Use categories: travel, stay, food, activities, buffer.\n"
             "3) Short bullet list of booking links and map URLs.\n\n"
             "Context: {context}\n"
+            "Weather Forecast:\n{weather}\n"
             "User Preferences: {preferences}\n\n"
             "Previous conversation (for refinement): {chat_history}\n\n"
             "Return a JSON object with keys: itinerary (list of day strings), budget (dict), links (dict)."
@@ -113,6 +121,7 @@ def plan_trip_with_agent(destination: str, days: int, budget: int, prefer: Optio
         "budget": budget,
         "preferences": prefer or "no specific preference",
         "context": context_text,
+        "weather": weather_context,
         "chat_history": chat_context
     }
 
